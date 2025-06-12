@@ -33,3 +33,26 @@ int compare(int a, int b, int c){
 void output(int a, int b, int c, int largest){
     printf("Largest of %d, %d and %d is %d",a,b,c,largest);
 }
+
+
+// without using else and conditional operators
+#include <stdio.h>
+int main() {
+    int a,b,c;
+    printf("enter 3 numbers:");
+    scanf("%d %d %d",&a,&b,&c);
+    if(a>b){
+        if(a>c){
+            printf("a=%d is the largest\n",a);
+            return 0;
+        }
+        printf("c=%d is the largest\n",c);
+        return 0;
+    }
+    if(b>c){
+            printf("b=%d is the largest\n",b);
+            return 0;
+    }
+   printf("c=%d is the largest\n",c);
+    return 0;
+}
